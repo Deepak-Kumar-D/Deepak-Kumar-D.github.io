@@ -210,6 +210,7 @@ body {
 
 .nav-cntr {
   margin-top: 5%;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -258,6 +259,7 @@ body {
   }
 }
 
+/* Skills */
 .skills-cntr {
   display: flex;
   flex-direction: column;
@@ -322,46 +324,16 @@ body {
   padding: 1rem;
 }
 
-/* .header-nav {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.header-nav button {
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  border: none;
-  display: grid;
-  place-items: center;
-  transform: translateY(2px);
-  cursor: pointer;
-}
-
-.header-nav button svg {
-  width: 30px;
-  height: 30px;
-  fill: var(--primary);
-  transition: all 0.25s ease-in-out;
-}
-
-.header-nav button:hover svg {
-  fill: var(--base);
-}
-
-.header-nav h2 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-} */
-
 /* Bottom Navbar */
+#navbar {
+  margin: 1rem 0 4rem 0;
+}
+
 .navbar-cntr {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin: 2rem 0 4rem 0;
 }
 
 .navbar-cntr h4 {
@@ -400,15 +372,18 @@ body {
   font-size: 0.8rem;
   letter-spacing: 1px;
   border: 0.5px solid lawngreen;
-  color: lawngreen;
   padding: 0.5rem;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
 }
 
 #nav-resume:hover {
-  color: lawngreen;
   background-color: green;
+}
+
+#nav-resume a {
+  color: lawngreen;
+  text-decoration: none;
 }
 
 /* Projects Section */
