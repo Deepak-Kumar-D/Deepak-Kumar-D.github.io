@@ -263,7 +263,7 @@ body {
 .skills-cntr {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .skills-row {
@@ -293,7 +293,8 @@ body {
   transition: all 0.25s ease-in-out;
 }
 
-.skills-row:first-child div p {
+.skills-row:first-child div p,
+.skills-row:nth-child(2) div p {
   top: -1.2rem;
 }
 

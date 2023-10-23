@@ -62,3 +62,9 @@ const transitions = () => {
     };
   }
 };
+
+let main = document.getElementsByClassName("project-cntr")[0];
+console.log(main);
+let div = document.createElement("div");
+div.className = "main-project-cntr";
+main.append(div.cloneNode(true));
