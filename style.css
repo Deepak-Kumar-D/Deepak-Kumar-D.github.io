@@ -535,7 +535,7 @@ body {
 
 .exp-panel p {
   color: var(--base);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .exp-panel p span {
@@ -547,9 +547,19 @@ body {
   padding: 0.25rem 0.5rem;
 }
 
-@media only screen and (max-width: 1450px) and (min-width: 751px) {
+@media only screen and (max-width: 1450px) {
   .about-cntr {
     margin-left: 36vw;
     max-width: 60vw;
+  }
+
+  .project-cntr {
+    height: 75vh;
+  }
+
+  .exp-panel p span {
+    display: block;
+    margin-top: 0.5rem;
+    margin-left: 0;
   }
 }
