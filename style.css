@@ -21,16 +21,6 @@ body {
   justify-content: space-between;
 }
 
-.main-cntr {
-  height: 100vh;
-  overflow: auto;
-  padding: 1rem;
-  background-image: url("portfolio.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 /* Background Shape Animation */
 .circles {
   position: absolute;
@@ -162,6 +152,16 @@ body {
 }
 
 /* About section */
+.main-cntr {
+  height: 100vh;
+  overflow: auto;
+  padding: 1rem;
+  background-image: url("portfolio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .about-cntr {
   height: 100%;
   width: 100%;
@@ -346,13 +346,7 @@ body {
   width: 130px;
   text-align: center;
   display: block;
-  background-image: linear-gradient(
-    to left,
-    transparent,
-    transparent 50%,
-    #917fb3 50%,
-    #917fb3
-  );
+  background-image: linear-gradient(to left, transparent, transparent 50%, #917fb3 50%, #917fb3);
   background-position: 100% 0;
   background-size: 200% 100%;
   transition: all 0.25s ease-in-out;
@@ -551,4 +545,11 @@ body {
   background-color: var(--neutral);
   border-radius: 25px;
   padding: 0.25rem 0.5rem;
+}
+
+@media only screen and (max-width: 1450px) and (min-width: 751px) {
+  .about-cntr {
+    margin-left: 36vw;
+    max-width: 60vw;
+  }
 }
