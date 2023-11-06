@@ -31,26 +31,6 @@ const openSection = (section) => {
   currSection = section;
 };
 
-const goBack = () => {
-  transitions();
-
-  if (currSection === "projects") {
-    document.getElementById(currSection).classList.remove("open");
-    document.getElementById(currSection).classList.add("close");
-    document.getElementById("about").classList.remove("close");
-    document.getElementById("about").classList.add("open");
-
-    currSection = "about";
-  } else if (currSection === "experiences") {
-    document.getElementById(currSection).classList.remove("open");
-    document.getElementById(currSection).classList.add("close");
-    document.getElementById("projects").classList.remove("close");
-    document.getElementById("projects").classList.add("open");
-
-    currSection = "projects";
-  }
-};
-
 const transitions = () => {
   let frames = document.getElementsByClassName("frame");
 
@@ -64,7 +44,6 @@ const transitions = () => {
 };
 
 let main = document.getElementsByClassName("project-cntr")[0];
-console.log(main);
 let div = document.createElement("div");
 div.className = "main-project-cntr";
 main.append(div.cloneNode(true));

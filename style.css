@@ -29,6 +29,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: -1;
 }
 
 .circles li {
@@ -168,6 +169,10 @@ body {
   display: table;
   margin-left: 50vw;
   max-width: 45vw;
+}
+
+.about-img {
+  display: none;
 }
 
 .about-sub-cntr {
@@ -498,25 +503,16 @@ body {
 
 .exp-cntr {
   width: 80%;
-}
-
-.exp-cntr table {
-  width: 100%;
-}
-
-.exp-cntr th,
-.exp-cntr td {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
   text-align: center;
-  padding: 1rem;
 }
 
-.exp-cntr td {
-  vertical-align: top;
-}
-
-.exp-cntr th {
+.exp-sub-cntr h2 {
   font-weight: 400;
   font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .exp-panel {
